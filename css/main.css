@@ -16,6 +16,10 @@ a, a:link, a:visited {
   text-decoration: none;
 }
 
+a {
+  color: #FFFFFF;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -85,6 +89,46 @@ legend {
   display: block;
 }
 
+.header {
+  min-height: 920px;
+}
+
+.info {
+  position: relative;
+}
+.info-text__title {
+  font-weight: 700;
+  font-size: 116px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.info-img {
+  position: absolute;
+  left: 0;
+  top: 22px;
+  z-index: -1;
+}
+
+.navigation {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 1.2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-list {
+  display: flex;
+  -moz-column-gap: 1.8rem;
+       column-gap: 1.8rem;
+  flex-wrap: wrap;
+}
+
+a:hover {
+  color: #FF0000;
+  transition: 0.2s ease-in;
+}
+
 @font-face {
   font-family: "Inter", sans-serif;
   src: url("./../fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
@@ -97,22 +141,7 @@ body {
   background-color: #1B1B1B;
 }
 
-.text1 {
-  font-weight: 300;
-  font-size: 20px;
-}
-
-.text2 {
-  font-weight: 400;
-  font-size: 20px;
-}
-
-.text3 {
-  font-weight: 500;
-  font-size: 20px;
-}
-
-.text4 {
-  font-weight: 700;
-  font-size: 20px;
+.container {
+  max-width: 1444px;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

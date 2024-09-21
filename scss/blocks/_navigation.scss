@@ -1,0 +1,19 @@
+.navigation {
+    font-size: 1.3rem;
+    font-weight: $font-weight-regular;
+    margin: 1.2rem 0;
+    @include flex;
+    align-items: center;
+
+    &-list {
+        @include flex-gap(1.8rem)
+    }
+}
+
+a {
+    &:hover {
+        color: $font-color-accent-third;
+        transition: 0.2s ease-in;
+    }
+}
+

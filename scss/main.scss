@@ -1,4 +1,6 @@
-@import './base/reset', './base/vars';
+@import './base/reset', './base/vars', './base/mixin';
+
+@import './blocks/header', './blocks/navigation';
 
 @font-face {
     font-family: "Inter", sans-serif;
@@ -14,19 +16,7 @@ body {
     background-color: $bg-color;
 }
 
-.text1 {
-    font-weight: $font-weight-light;
-    font-size: 20px;
-}
-.text2 {
-    font-weight: $font-weight-regular;
-    font-size: 20px;
-}
-.text3 {
-    font-weight: $font-weight-medium;
-    font-size: 20px;
-}
-.text4 {
-    font-weight: $font-weight-bold;
-    font-size: 20px;
+.container {
+    max-width: 1444px;
+    margin: 0 auto;
 }
