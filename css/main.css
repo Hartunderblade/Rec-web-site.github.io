@@ -93,20 +93,104 @@ legend {
   min-height: 920px;
 }
 
+.header-line {
+  position: absolute;
+  border-bottom: 1px solid rgba(158, 158, 158, 0.23);
+  width: 100%;
+  left: 0;
+}
+
 .info {
+  height: 850px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info-text {
   position: relative;
 }
 .info-text__title {
   font-weight: 700;
-  font-size: 116px;
+  font-size: 121px;
+  text-align: end;
   text-transform: uppercase;
   z-index: 1;
+}
+.info-text__subtitle {
+  position: absolute;
+  right: 0;
 }
 .info-img {
   position: absolute;
   left: 0;
-  top: 22px;
+  top: 0px;
   z-index: -1;
+}
+.info .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+.info .social-block {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  flex-wrap: wrap;
+}
+.info .social-block a {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 42px;
+  position: absolute;
+  right: 10%;
+  margin: 4.1rem;
+  font-weight: 500;
+  font-size: 22px;
+}
+.btn__circle, .btn__text, .btn__white-arrow {
+  position: absolute;
+}
+.btn__circle {
+  top: 0;
+  left: 18%;
+  height: 100%;
+  border-radius: 100%;
+  width: 100%;
+  box-shadow: 0 0 1px 1px #fff;
+  transition: 0.3s linear;
+}
+.btn__white-arrow {
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 60px;
+  height: 100px;
+  stroke: #FFFFFF;
+  display: flex;
+  transition: 0.3s ease-in-out;
+}
+.btn__text {
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  z-index: 2;
+  padding: 24px 8px;
+  transition: 0.3s linear;
+}
+.btn:hover .btn__circle {
+  transform: scale(0);
+}
+.btn:hover .btn__white-arrow {
+  transform: translate(-50%, -50%) scale(1);
+}
+.btn:hover .btn__text {
+  transform: translate(40px, -50%);
 }
 
 .navigation {
@@ -115,6 +199,7 @@ legend {
   margin: 1.2rem 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   align-items: center;
 }
 .navigation-list {
