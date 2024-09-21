@@ -1,0 +1,32 @@
+@import './base/reset', './base/vars';
+
+@font-face {
+    font-family: "Inter", sans-serif;
+    src: url('./../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: $font-color-first;
+    background-color: $bg-color;
+}
+
+.text1 {
+    font-weight: $font-weight-light;
+    font-size: 20px;
+}
+.text2 {
+    font-weight: $font-weight-regular;
+    font-size: 20px;
+}
+.text3 {
+    font-weight: $font-weight-medium;
+    font-size: 20px;
+}
+.text4 {
+    font-weight: $font-weight-bold;
+    font-size: 20px;
+}
