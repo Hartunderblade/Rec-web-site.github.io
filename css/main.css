@@ -135,8 +135,7 @@ legend {
 }
 .info .social-block {
   display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 .info .social-block a {
@@ -204,14 +203,139 @@ legend {
 }
 .navigation-list {
   display: flex;
-  -moz-column-gap: 1.8rem;
-       column-gap: 1.8rem;
+  gap: 1.8rem;
   flex-wrap: wrap;
 }
 
 a:hover {
   color: #FF0000;
   transition: 0.2s ease-in;
+}
+
+.sale {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.sale__background {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.sale__title {
+  font-weight: 300;
+  font-size: 30px;
+  max-width: 500px;
+  margin-top: 8.8rem;
+  z-index: 2;
+}
+.sale__image {
+  margin-top: 2.5rem;
+}
+
+.about-studio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-studio__image {
+  width: 39rem;
+  height: 39rem;
+}
+
+.description-title {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1.7rem;
+       column-gap: 1.7rem;
+}
+.description-title__img {
+  width: 9rem;
+  height: 4.1rem;
+}
+.description-title__text {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.description-text {
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 4.1rem;
+}
+.description-text p {
+  font-size: 1.3rem;
+}
+
+.services-title {
+  margin-top: 6.2rem;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1.7rem;
+       column-gap: 1.7rem;
+}
+.services-title__text {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.blocks {
+  display: flex;
+  gap: 1.3rem;
+  flex-wrap: wrap;
+  margin-top: 4.1rem;
+}
+
+.block {
+  position: relative;
+  border: 2px solid #FFFFFF;
+  padding: 2.4rem;
+  width: 29.2rem;
+}
+.block__title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.block__text {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.block .line {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  border-top: 1px solid #383838;
+}
+
+.lite {
+  color: #28DE9C;
+}
+
+.medium {
+  color: #FFD646;
+}
+
+.pro {
+  color: #FF0000;
+}
+
+.booking {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+.booking a {
+  font-size: 1.3rem;
+  font-weight: 400;
+  border-bottom: 1px solid #FFFFFF;
+}
+.booking p {
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 @font-face {

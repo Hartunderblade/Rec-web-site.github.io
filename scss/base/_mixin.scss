@@ -6,6 +6,18 @@
 
 @mixin flex-gap($column) {
     display: flex;
-    column-gap: $column;
+    // justify-content: space-between;
+    gap: $column;
     flex-wrap: wrap;
+}
+
+@mixin column-flex($column) {
+    display: flex;
+    align-items: center;
+    column-gap: $column;
+}
+
+@mixin title {
+    font-size: 2rem;
+    font-weight: $font-weight-bold;
 }

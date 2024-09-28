@@ -1,0 +1,67 @@
+.services-title {
+    margin-top: 6.2rem;
+    @include column-flex(1.7rem);
+
+    &__text {
+        @include title;
+    }
+}
+
+.blocks {
+    @include flex-gap(1.3rem);
+    margin-top: 4.1rem;
+}
+.block {
+    position: relative;
+    border: 2px solid $color-white;
+    padding: 2.4rem;
+    width: 29.2rem;
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: $font-weight-regular;
+    }
+
+    &__text {
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: $font-weight-light;
+    }
+    .line {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        border-top: 1px solid #383838;
+    }
+}
+
+.lite{
+    color: $font-color-accent-first;
+}
+
+.medium {
+    color: $font-color-accent-second;
+}
+
+.pro {
+    color: $font-color-accent-third;
+}
+
+.booking {
+   
+    @include flex;
+
+    margin-top: 3rem;
+
+    a {
+        font-size: 1.3rem;
+        font-weight: $font-weight-regular;
+        border-bottom: 1px solid $color-white;  
+    }
+
+    p {
+        font-size: 1.5rem;
+        font-weight: $font-weight-light;
+    }
+}

@@ -1,131 +1,128 @@
 .header {
-    min-height: 920px;
+  min-height: 920px;
 }
 
 .header-line {
-    position: absolute;
-    border-bottom: 1px solid rgba(158, 158, 158, 0.23);
-    width: 100%;
-    left: 0;
+  position: absolute;
+  border-bottom: 1px solid rgba(158, 158, 158, 0.23);
+  width: 100%;
+  left: 0;
 }
 
 .info {
+  height: 850px;
+  position: relative;
 
-    height: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &-text {
     position: relative;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    &-text {
-        position: relative;
-
-        &__title {
-            font-weight: $font-weight-bold;
-            font-size: 121px;
-            text-align: end;
-            text-transform: uppercase;
-            z-index: 1;
-        }
-
-        &__subtitle {
-            position: absolute;
-            right: 0;
-            // bottom: 20px;
-        }
+    &__title {
+      font-weight: $font-weight-bold;
+      font-size: 121px;
+      text-align: end;
+      text-transform: uppercase;
+      z-index: 1;
     }
 
-    &-img {
-        position: absolute;
-        left: 0;
-        top: 0px;
-        z-index: -1;
-    }
-
-    .social {
-        @include flex;
-
-        margin: 30px 0;
-
-        &-block {
-            @include flex-gap(30px);
-
-            a {
-                font-weight: $font-weight-light;
-                font-size: 18px;
-            }
-        }
-    }
-}
-
-.btn {
-    display: inline-block;
-    padding: 42px;
-    position: absolute;
-    right: 10%;
-    margin: 4.1rem;
-    font-weight: $font-weight-medium;
-    font-size: 22px;
-  
-    &__circle,
-    &__text,
-    &__white-arrow {
+    &__subtitle {
       position: absolute;
-    }
-  
-    &__circle {
-      top: 0;
-      left: 18%;
-      height: 100%;
-      border-radius: 100%;
-      width: 100%;
-      box-shadow: 0 0 1px 1px #fff;
-      transition: 0.3s linear;
-    }
-  
-    &__white-arrow {
-      top: 50%;
-      left: 60%;
-      transform: translate(-50%, -50%) scale(0);
-      width: 60px;
-      height: 100px;
-    //   border-radius: 100%;
-        stroke: $font-color-first;
-      display: flex;
-      transition: 0.3s ease-in-out;
-  
-      svg {
-        // // width: 24px;
-        // // height: 24px;
-        // // margin: auto;
-        // // color: white;
-        // color: #fff;
-      }
-    }
-  
-    &__text {
-      top: 50%;
-      transform: translateY(-50%);
-      white-space: nowrap;
-      z-index: 2;
-      padding: 24px 8px;
-      transition: 0.3s linear;
-    }
-  
-    &:hover {
-      .btn__circle {
-        transform: scale(0);
-      }
-  
-      .btn__white-arrow {
-        transform: translate(-50%, -50%) scale(1);
-      }
-  
-      .btn__text {
-        transform: translate(40px, -50%);
-      }
+      right: 0;
+      // bottom: 20px;
     }
   }
 
-  
+  &-img {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: -1;
+  }
+
+  .social {
+    @include flex;
+
+    margin: 30px 0;
+
+    &-block {
+      @include flex-gap(30px);
+
+      a {
+        font-weight: $font-weight-light;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 42px;
+  position: absolute;
+  right: 10%;
+  margin: 4.1rem;
+  font-weight: $font-weight-medium;
+  font-size: 22px;
+
+  &__circle,
+  &__text,
+  &__white-arrow {
+    position: absolute;
+  }
+
+  &__circle {
+    top: 0;
+    left: 18%;
+    height: 100%;
+    border-radius: 100%;
+    width: 100%;
+    box-shadow: 0 0 1px 1px #fff;
+    transition: 0.3s linear;
+  }
+
+  &__white-arrow {
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 60px;
+    height: 100px;
+    //   border-radius: 100%;
+    stroke: $font-color-first;
+    display: flex;
+    transition: 0.3s ease-in-out;
+
+    svg {
+      // // width: 24px;
+      // // height: 24px;
+      // // margin: auto;
+      // // color: white;
+      // color: #fff;
+    }
+  }
+
+  &__text {
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    z-index: 2;
+    padding: 24px 8px;
+    transition: 0.3s linear;
+  }
+
+  &:hover {
+    .btn__circle {
+      transform: scale(0);
+    }
+
+    .btn__white-arrow {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .btn__text {
+      transform: translate(40px, -50%);
+    }
+  }
+}

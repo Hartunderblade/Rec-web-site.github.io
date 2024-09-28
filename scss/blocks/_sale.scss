@@ -1,0 +1,23 @@
+.sale {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &__background {
+        position: absolute;
+        width: 100%;
+        left: 0;
+    }
+
+    &__title {
+        font-weight: $font-weight-light;
+        font-size: 30px;
+        max-width: 500px;
+        margin-top: 8.8rem;
+        z-index: 2;
+    }
+
+    &__image {
+        margin-top: 2.5rem;
+    }
+}
