@@ -1,17 +1,22 @@
 .footer {
-    margin-top: 100px;
+    margin-top: $indent-large;
     &-top {
         @include flex;
 
-        border-bottom: 1px solid #5C5C5C;
-        margin-bottom: 20px;
+        border-bottom: 1px solid $footer-border-color;
+        margin-bottom: 1.2rem;
+
+        &__logo {
+            width: 6.2rem;
+            height: 2.9rem;
+        }
 
     }
 
     &-bottom {
-        margin: 20px 0;
+        margin: 1.2rem 0;
         &__text {
-            font-size: 14px;
+            font-size: 0.8rem;
             font-weight: $font-weight-regular;
             color: #6D6D6D;
         }

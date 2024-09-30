@@ -17,6 +17,12 @@
     column-gap: $column;
 }
 
+@mixin column-row($row) {
+    display: flex;
+    flex-direction: column;
+    row-gap: $row;
+}
+
 @mixin title {
     font-size: 2rem;
     font-weight: $font-weight-bold;

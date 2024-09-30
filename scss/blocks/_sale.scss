@@ -1,12 +1,17 @@
 .sale {
-    position: relative;
+    // position: relative;
     display: flex;
     justify-content: space-between;
 
-    &__background {
+    // position: absolute;
+
+    &-rectangle {
         position: absolute;
-        width: 100%;
+        // margin: 0 -20%;
+        // margin: -100%;
         left: 0;
+        &__background {
+        }
     }
 
     &__title {
@@ -19,5 +24,6 @@
 
     &__image {
         margin-top: 2.5rem;
+        z-index: 1;
     }
 }

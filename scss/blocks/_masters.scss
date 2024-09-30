@@ -1,0 +1,37 @@
+.peoples {
+    @include column-row(9.3rem);
+    margin-top: $indent-average;
+}
+.people {
+    @include column-flex(40px);
+
+    &__image {
+        border-radius: 10px;
+    }
+    
+    &-text {
+        &__name {
+            font-size: 1.5rem;
+            font-weight: $font-weight-medium;
+        }
+        
+        &__director {
+            font-size: 1.3rem;
+            font-weight: $font-weight-regular;
+            color: $font-color-second;
+            margin: 2rem 0;
+        }
+
+        &__description {
+            font-size: 1.2rem;
+            font-weight: $font-weight-regular;
+            max-width: 28rem;
+        }
+    }
+}
+
+.people-second {
+    display: flex;
+    justify-content: flex-end;
+}
+
