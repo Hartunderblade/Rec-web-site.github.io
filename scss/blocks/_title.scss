@@ -1,0 +1,14 @@
+.title {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 1.7rem;
+
+    &__img {
+        width: 9rem;
+        height: 4.1rem;
+    }
+
+    &__text {
+        @include title;
+    }
+}

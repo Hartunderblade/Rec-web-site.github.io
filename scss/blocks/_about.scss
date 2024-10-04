@@ -1,37 +1,24 @@
 .about {
-    margin-top: 12rem;
-}
-.about-studio {
-    @include flex;
+    margin-top: $indent-large;
+    @include flex-gap(4rem);
+    flex-wrap: nowrap;
 
     &__image {
-        width: 39rem;
-        height: 39rem;
+        width: 44.5rem;
+        height: 44.5rem;
+        border-radius: 10px;
     }
 }
 
 .description {
-    &-title {
-        @include column-flex(1.7rem);
-
-        &__img {
-            width: 9rem;
-            height: 4.1rem;
-        }
-
-        &__text {
-            @include title;
-        }
-    }
-
     &-text {
-        max-width: 40rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1.2rem;
         margin-top: 4.1rem;
+        @include column-row(2.6rem);
+
         p {
             font-size: 1.3rem;
+            font-weight: $font-weight-regular;
+            max-width: 39.4rem;
         }
     }
 }

@@ -1,0 +1,38 @@
+.works {
+    margin-top: $indent-large;
+}
+
+.works-title {
+    @include flex;
+    margin-bottom: $indent-average;
+
+    &__link {
+        font-size: 1rem;
+        font-weight: $font-weight-light;
+        color: $font-color-second;
+        border-bottom: 1px solid $font-color-second;
+    }
+}
+
+.tracks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &-block {
+        @include column-row(3.7rem);
+    }
+}
+
+.track {
+    @include column-flex(1.4rem);
+    &__img {
+        width: 102px;
+        height: 102px;
+        background-color: cadetblue;
+    }
+
+    &-play {
+        @include column-flex(0.6rem);
+    }
+}

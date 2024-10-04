@@ -1,6 +1,16 @@
 @import './base/reset', './base/vars', './base/mixin';
 
-@import './blocks/header', './blocks/navigation', './blocks/sale', './blocks/about', './blocks/services', './blocks/contact', './blocks/masters', './blocks/footer';
+@import 
+    './blocks/header', 
+    './blocks/navigation',
+    './blocks/title', 
+    './blocks/sale', 
+    './blocks/works',
+    './blocks/about', 
+    './blocks/services', 
+    './blocks/contact', 
+    './blocks/masters', 
+    './blocks/footer';
 
 @font-face {
     font-family: "Inter", sans-serif;

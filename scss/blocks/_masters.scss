@@ -1,3 +1,6 @@
+.masters {
+    margin-top: $indent-large;
+}
 .peoples {
     @include column-row(9.3rem);
     margin-top: $indent-average;

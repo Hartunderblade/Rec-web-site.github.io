@@ -212,6 +212,21 @@ a:hover {
   transition: 0.2s ease-in;
 }
 
+.title {
+  display: inline-flex;
+  align-items: center;
+  -moz-column-gap: 1.7rem;
+       column-gap: 1.7rem;
+}
+.title__img {
+  width: 9rem;
+  height: 4.1rem;
+}
+.title__text {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 .sale {
   display: flex;
   justify-content: space-between;
@@ -232,47 +247,82 @@ a:hover {
   z-index: 1;
 }
 
-.about {
-  margin-top: 12rem;
+.works {
+  margin-top: 6.2rem;
 }
 
-.about-studio {
+.works-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 5rem;
 }
-.about-studio__image {
-  width: 39rem;
-  height: 39rem;
+.works-title__link {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #AFAFAF;
+  border-bottom: 1px solid #AFAFAF;
 }
 
-.description-title {
+.tracks {
   display: flex;
-  align-items: center;
-  -moz-column-gap: 1.7rem;
-       column-gap: 1.7rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.description-title__img {
-  width: 9rem;
-  height: 4.1rem;
-}
-.description-title__text {
-  font-size: 2rem;
-  font-weight: 700;
-}
-.description-text {
-  max-width: 40rem;
+.tracks-block {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  row-gap: 3.7rem;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1.4rem;
+       column-gap: 1.4rem;
+}
+.track__img {
+  width: 102px;
+  height: 102px;
+  background-color: cadetblue;
+}
+.track-play {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 0.6rem;
+       column-gap: 0.6rem;
+}
+
+.about {
+  margin-top: 6.2rem;
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+.about__image {
+  width: 44.5rem;
+  height: 44.5rem;
+  border-radius: 10px;
+}
+
+.description-text {
   margin-top: 4.1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.6rem;
 }
 .description-text p {
   font-size: 1.3rem;
+  font-weight: 400;
+  max-width: 39.4rem;
+}
+
+.services {
+  margin-top: 6.2rem;
 }
 
 .services-title {
-  margin-top: 6.2rem;
   display: flex;
   align-items: center;
   -moz-column-gap: 1.7rem;
@@ -284,16 +334,16 @@ a:hover {
 }
 
 .blocks {
+  margin-top: 5rem;
   display: flex;
   gap: 1.3rem;
   flex-wrap: wrap;
-  margin-top: 4.1rem;
 }
 
 .block {
   position: relative;
   border: 2px solid #FFFFFF;
-  padding: 2.4rem;
+  padding: 2rem;
   width: 29.2rem;
 }
 .block__title {
@@ -376,6 +426,10 @@ a:hover {
 .contacts-map__image {
   border-radius: 0.3rem;
   max-width: 785px;
+}
+
+.masters {
+  margin-top: 6.2rem;
 }
 
 .peoples {
