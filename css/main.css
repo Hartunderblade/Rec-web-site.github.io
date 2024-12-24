@@ -310,7 +310,7 @@ a:hover {
   margin-top: 4.1rem;
   display: flex;
   flex-direction: column;
-  row-gap: 2.6rem;
+  row-gap: 1.2rem;
 }
 .description-text p {
   font-size: 1.3rem;
@@ -391,10 +391,15 @@ a:hover {
   font-weight: 300;
 }
 
+.contact {
+  margin-top: 6.2rem;
+}
+
 .contacts {
   display: flex;
   gap: 1.2rem;
   flex-wrap: wrap;
+  margin-top: 5rem;
 }
 .contacts-record {
   display: flex;
